@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(26, 110, 26);
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+header > img {
+    width: 30px;
+}
+
+header input{
+    height: 30px;
+    border: 0;
+    width: 250px;
+    border-radius: 10px;
+    display:none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
+@media(min-width: 768px){
+    header input{
+        display:block;
+    }
+    header img{
+        margin-left: -40px;
+    }
+
+    .pricipal > div:nth-child(1){
+        width: 70%;
+    }
+
+    .pricipal > div:nth-child(2){
+        width: 30%;
+    }
+
+    .principal{
+        display: flex;
+
+    }
+}
+
+header div{
+    align-items: center;
+    display: flex;
+}
+
+.principal > div:nth-child(1) > img{
+    width: 100%;
+}
+
+.principal .destaque img{
+    width: 100%;
+}
+
+.destaque{
+    margin-top: 45px;
+}
